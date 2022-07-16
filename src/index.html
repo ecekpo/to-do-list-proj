@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webpack app</title>
+    <title>webpack template</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-   
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,700"
+    />
   </head>
   <body>
     <header></header>
@@ -18,7 +22,7 @@
         <div class="todo-container">
           <div class="todo-head">
             <h1 class="todo-title">Today's Tasks</h1>
-            <button class="refresh" type="button">
+            <button class="refresh cursor" type="button">
               <i class="fa-solid fa-arrows-rotate"></i>
             </button>
           </div>
@@ -28,11 +32,16 @@
               placeholder="add to your list..."
               class="todo-input"
             />
-            <button class="todo-btn" type="button">
+            <button class="todo-btn cursor" type="button">
               <i class="fa-solid fa-up-right-from-square"></i>
             </button>
           </form>
           <ul class="todo-list"></ul>
+          <div class="clear">
+            <button class="clear-btn cursor" type="button">
+              Clear all completed
+            </button>
+          </div>
         </div>
       </section>
     </main>

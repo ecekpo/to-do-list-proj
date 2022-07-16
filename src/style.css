@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -33,28 +34,33 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e9c3c3;
+  background-color: #f7f7f7;
 }
 
 .todo-container {
-  background-color: rgb(231, 238, 245);
+  background-color: white;
   padding: 15px;
   width: 400px;
 }
 
 .refresh {
-  background-color: rgb(239, 252, 223);
+  background-color: white;
 }
 
 .todo-input {
   height: 40px;
   padding: 0 10px 0 10px;
   background-color: #f7f7f7;
+  width: 85%;
 }
 
 .todo-btn {
   height: 40px;
   background-color: #f7f7f7;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .todo-form {
@@ -79,4 +85,19 @@ input {
 .todo-description {
   font-size: 12px;
   margin-left: 10px;
+}
+
+.clear-btn {
+  background-color: black;
+  color: white;
+  font-size: 9px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
 }
