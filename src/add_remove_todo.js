@@ -12,6 +12,7 @@ const display = () => {
   taskDailyList = JSON.parse(localStorage.getItem('localItem')) || [];
   taskDailyList.forEach((task) => {
     const dailyTaskList = document.querySelector('.todo-app-list');
+
     const flag = task.completed ? 'checked' : '';
     const lists = document.createElement('li');
     lists.classList.add('todo-li');
@@ -75,7 +76,6 @@ dailyTaskList.addEventListener('click', (e) => {
 });
 
 dailyTaskList.addEventListener('click', clearTask);
-
 clearBtnList.addEventListener('click', (e) => {
   e.preventDefault();
   clearAllTask();

@@ -103,3 +103,18 @@ input {
   border-radius: 6px;
   width: 35%;
 }
+
+.clear-btn {
+  background-color: black;
+  color: white;
+  font-size: 9px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+}
