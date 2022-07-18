@@ -1,4 +1,4 @@
-export const clearList = (e) => {
+export const clearTask = (e) => {
   const clicked = e.target.closest('.checkbox');
   if (!clicked) return;
   const targetData = parseInt(clicked.getAttribute('data-set'), 10);
@@ -8,9 +8,9 @@ export const clearList = (e) => {
   localStorage.setItem('localItem', JSON.stringify(task));
 };
 
-export const clearAll = () => {
+export const clearAllTask = () => {
   const setting = JSON.parse(localStorage.getItem('localItem')) || [];
-  const notCompleted = setting.filter((taskList) => !taskList.completed);
+  const notCompleted = setting.filter((taskDailyList) => !taskDailyList.completed);
   setting.length = 0;
   let i = 0;
   notCompleted.forEach((element) => {
