@@ -1,3 +1,4 @@
+ Todo-interactive
 export const clearTask = (e) => {
   const clicked = e.target.closest('.checkbox');
   if (!clicked) return;
@@ -8,6 +9,7 @@ export const clearTask = (e) => {
   localStorage.setItem('localItem', JSON.stringify(task));
 };
 
+ Todo-interactive
 export const clearAllTask = () => {
   const setting = JSON.parse(localStorage.getItem('localItem')) || [];
   const notCompleted = setting.filter((taskDailyList) => !taskDailyList.completed);

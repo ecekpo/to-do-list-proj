@@ -47,6 +47,7 @@ input {
   background-color: #f7f7f7;
   flex-direction: column;
   justify-content: center;
+ Todo-interactive
 }
 
 .todo-app-container {
@@ -62,6 +63,7 @@ input {
 .todo-app-input {
   height: 50px;
   padding: 0 10px 0 10px;
+Todo-interactive
   background-color: #b2c0f0;
   width: 85%;
 }
@@ -73,6 +75,7 @@ input {
 
 .cursor {
   cursor: pointer;
+ Todo-interactive
 }
 
 .todo-app-form {
@@ -102,4 +105,19 @@ input {
   margin-top: 12px;
   border-radius: 6px;
   width: 35%;
+}
+
+.clear-btn {
+  background-color: black;
+  color: white;
+  font-size: 9px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
 }

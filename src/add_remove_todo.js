@@ -1,5 +1,5 @@
+Todo-interactive
 import { clearTask, clearAllTask } from './func.js';
-
 const dailyTaskList = document.querySelector('.todo-app-list');
 const todoBtnApp = document.querySelector('.todo-app-btn');
 const todoInputApp = document.querySelector('.todo-app-input');
@@ -8,16 +8,19 @@ const clearBtnList = document.querySelector('.clear-list-btn');
 let taskDailyList = [];
 
 const display = () => {
+ Todo-interactive
   dailyTaskList.innerHTML = '';
   taskDailyList = JSON.parse(localStorage.getItem('localItem')) || [];
   taskDailyList.forEach((task) => {
     const dailyTaskList = document.querySelector('.todo-app-list');
+
     const flag = task.completed ? 'checked' : '';
     const lists = document.createElement('li');
     lists.classList.add('todo-li');
     lists.innerHTML = `
       <div class="description">
         <input type="checkbox" ${flag} class="checkbox" data-set="${task.index}"/>
+Todo-interactive
         <input class="todo-desc" type="text"  value="${task.description}">
       </div>
       <div class="ellipses-icon">
@@ -74,6 +77,7 @@ dailyTaskList.addEventListener('click', (e) => {
   }
 });
 
+Todo-interactive
 dailyTaskList.addEventListener('click', clearTask);
 
 clearBtnList.addEventListener('click', (e) => {
@@ -81,3 +85,4 @@ clearBtnList.addEventListener('click', (e) => {
   clearAllTask();
   display();
 });
+
