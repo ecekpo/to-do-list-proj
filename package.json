@@ -1,5 +1,5 @@
 {
-  "name": "webpack-template",
+  "name": "webpack-app",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ibizugbe/Webpack-template.git"
+    "url": "git+https://github.com/ecekpo/to-do-list-proj.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ibizugbe/Webpack-template/issues"
+    "url": "https://github.com/ecekpo/to-do-list-proj.git/issues"
   },
-  "homepage": "https://github.com/Ibizugbe/Webpack-template#readme",
+  "homepage": "https://github.com/ecekpo/to-do-list-proj.git#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
