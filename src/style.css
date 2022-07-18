@@ -28,7 +28,7 @@ input {
   border: 0;
 }
 
-#todo {
+#todo-app {
   height: 100vh;
   display: flex;
   flex-direction: column;

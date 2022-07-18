@@ -1,6 +1,9 @@
+import { clearList, clearAll } from './func.js';
+
 const myList = document.querySelector('.todo-list');
 const todoBtn = document.querySelector('.todo-btn');
 const todoInput = document.querySelector('.todo-input');
+const clearBtn = document.querySelector('.clear-btn');
 
 let taskList = [];
 
@@ -9,15 +12,16 @@ const display = () => {
   taskList = JSON.parse(localStorage.getItem('localItem')) || [];
   taskList.forEach((task) => {
     const myList = document.querySelector('.todo-list');
+    const flag = task.completed ? 'checked' : '';
     const lists = document.createElement('li');
     lists.classList.add('todo-li');
     lists.innerHTML = `
       <div class="description">
-        <input type="checkbox" />
+        <input type="checkbox" ${flag} class="checkbox" data-set="${task.index}"/>
         <input class="todo-description" type="text"  value="${task.description}">
       </div>
       <div class="ellipses-icon">
-        <i class="fa-solid fa-trash-can" id="${task.index}"></i>
+        <i class="fa-solid fa-trash-can cursor" id="${task.index}"></i>
       </div>
     `;
     myList.appendChild(lists);
@@ -68,4 +72,12 @@ myList.addEventListener('click', (e) => {
     const index = parseInt(e.target.getAttribute('id'), 10);
     removeTask(index);
   }
+});
+
+myList.addEventListener('click', clearList);
+
+clearBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  clearAll();
+  display();
 });

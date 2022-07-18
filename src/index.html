@@ -5,31 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webpack template</title>
-
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,700"
+  />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,700"
     />
   </head>
   <body>
     <header></header>
     <main>
-      <section id="todo">
+      <section id="todo-app">
         <div class="todo-container">
           <div class="todo-head">
-            <h1 class="todo-title">Today's Tasks</h1>
-            <button class="refresh cursor" type="button">
+            <h1 class="todo-title">Daily Todo Tasks</h1>
+            <button class="refresh" type="button">
               <i class="fa-solid fa-arrows-rotate"></i>
             </button>
           </div>
           <form class="todo-form">
             <input
               type="text"
-              placeholder="add to your list..."
+              placeholder="Add your daily task here"
               class="todo-input"
             />
             <button class="todo-btn cursor" type="button">
