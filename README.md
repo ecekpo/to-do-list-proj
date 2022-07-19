@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[See webpage here](https://github.com/ecekpo/to-do-list-proj)
+[See webpage here](https://ecekpo.github.io/to-do-list-proj/)
 
 
 ## Authors
